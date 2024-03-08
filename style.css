@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+
+    background-color: #9008ff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg{
+    width: 100%;
+}
+
+
+#text1{
+    opacity: 0;
+    animation: text .5s ease-out 4s forwards;
+}
+
+#text2{
+    opacity: 0;
+    animation: text .5s ease-out 4.2s forwards;
+}
+
+@keyframes text{
+    0%{
+        opacity: 0;
+        transform: translate3d(0,-20px,0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+#elip1{
+    transform-origin: center top;
+    transform-box: fill-box;
+
+    animation: elip 2s ease 2s forwards,
+    bounce-in 1s ease 1s;
+}
+
+@keyframes bounce-in {
+    0%{ opacity: 0; transform: scale(.3); }
+    50%{ opacity: 1; transform: scale(1.0); }
+    70%{ transform: scale(0.9); }
+    100%{ transform: scale(1); }
+}
+
+@keyframes elip{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+#elip2{
+    opacity: 0;
+    animation: appear 1s ease 2200ms forwards;
+}
+
+#elip3{
+    opacity: 0;
+    animation: appear 1s ease 2300ms forwards;
+}
+
+#elip4{
+    opacity: 0;
+    animation: appear 1s ease 2400ms forwards;
+}
+
+#elip5{
+    opacity: 0;
+    animation: appear 1s ease 2500ms forwards;
+}
+
+#elip6{
+    opacity: 0;
+    animation: appear 1s ease 2600ms forwards;
+}
+
+#elip7{
+    opacity: 0;
+    animation: appear 1s ease 2800ms forwards;
+}
+
+#elip8{
+    opacity: 0;
+    animation: appear 1s ease 3000ms forwards;
+}
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
